@@ -14,10 +14,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -30,6 +27,69 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div id="hour-9" class="row time-block">
+        <div class="col-md-1 hour">9AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-10" class="row time-block">
+        <div class="col-md-1 hour">10AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-11" class="row time-block">
+        <div class="col-md-1 hour">11AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-12" class="row time-block">
+        <div class="col-md-1 hour">12PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-13" class="row time-block">
+        <div class="col-md-1 hour">1PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-14" class="row time-block">
+        <div class="col-md-1 hour">2PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-15" class="row time-block">
+        <div class="col-md-1 hour">3PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-16" class="row time-block">
+        <div class="col-md-1 hour">4PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
+      <div id="hour-17" class="row time-block">
+        <div class="col-md-1 hour">5PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -37,8 +97,8 @@
     <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
     <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
     <script>
-      dayjs.extend(window.dayjs_plugin_advancedFormat)
-      dayjs.extend(window.dayjs_plugin_weekOfYear)
+      dayjs.extend(window.dayjs_plugin_advancedFormat);
+      dayjs.extend(window.dayjs_plugin_weekOfYear);
     </script>
   </body>
 </html>
