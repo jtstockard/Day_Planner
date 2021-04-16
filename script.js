@@ -22,14 +22,39 @@
         *if field is empty, reomve from localstorage
     * display a notification when the save is complete */
 
-
-
-
-dayjs.extend(LocalizedFormat)
+dayjs.extend(LocalizedFormat);
 dayjs(Date);
 
-$("currentDay").text(dayjs().format('llll'));
-
+$("currentDay").text(dayjs().format("llll"));
 var currentTime = dayjs();
 
-currentTime = currentTime.startOf("hour");
+$(".saveBtn").on("click", function (event) {
+  event.preventDefault();
+  console.log(this);
+  var time = $(this).siblings(".description").val();
+  var value = $(this).parent().attr("id");
+  localStorage.setItem(time, value);
+});
+function timeFrame() {
+  var currentTime = dayjs().hours();
+
+  $(".time-block").each(function () {
+    var hourEl = $(this).attr("id");
+    var hourDay = hourEl.substring(5, hourEl.length);
+    var intHourDay = parseInt(hourDay);
+    var intCurrentHours = parseInt(currentTime);
+    if (parseInt(intHourDay) > parseInt(intCurrentHours)) {
+      $(this).addClass("past");
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+    } else if (parseInt(intHourDay) > parseInt(intCurrentHours)) {
+      $(this).addClass("future");
+      $(this).removeClass("present");
+      $(this).removeClass("past");
+    } else if (parseInt(intHourDay) === parseInt(intCurrentHours)) {
+      $(this).addClass("present");
+      $(this).removeClass("future");
+      $(this).removeClass("past");
+    }
+  });
+}
