@@ -24,7 +24,7 @@
 
 ## Usage
 
-![Example](Images/example.gif)
+![Example](https://raw.githubusercontent.com/jtstockard/Day_Planner/develop/Images/Example.gif)
 
 ## Credits
 
