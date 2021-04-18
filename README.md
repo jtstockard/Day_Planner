@@ -2,10 +2,10 @@
 
 ## Description
 
-- As a coding bottcamp student, I wanted to create a quiz to test knowledge of coding information I have learned that applies to javascrpit.
-- This project gives myself an estimate of what I need to perform a html, css, and js all in one webpage to merge all elements together.
-- This solves for set attributes, text content, JSON, and timelapse which all togther crate a functional quiz game to test newly accquired skills.
-- With this assignment I learned how to apply a new text to an html from logic, use local storage on the console, and application of DOM.
+- As an employee with a busy work schedule, I've created an app that allows to plan my days accordingly and uses saved data to keep track of that iformation.
+- This project gives myself an understanding of how jQuery works in a work place enviroment and the use of other third party api's, such as Day.js.
+- This solves for date formatting, event delegation, use of open-source css, and Api usage from third parites.
+- With this assignment I learned how to apply a scripts from an existing library of code to other pages and documents, as well as keep a record of date formatting using other scripts.
 
 ## Table of Contents
 
@@ -16,16 +16,15 @@
 
 ## Installation
 
-- 1. Created an html with id's that will have their content be changing based on the logic provided by logic.
-- 2. Stored questions and other content in variables that will be called upon for future actions.
-- 3. Apply functions to render and compare an index of questions that have a correct answer.
-- 4. Starts a timer once start button is pressed and continues to countdown as the quiz begins.
-- 5. Once quiz is over, a highscore entry is revealed and will store input to localstorage.
-- 6. Added CSS elements to make same sizes for media queries.
+- 1. Created a set of timeblocks inside the html that refer back to jQuery and day.js.
+- 2. Used a display function of Day.js to show the current time when you load the browser.
+- 3. Applied time blocks to give them the ability to read the current time and adjust thier color according to the current time listed.
+- 4. Created a localstorage to save information to the save button that is next to the timeblock.
+- 5. Use an event finder to select the save button next to the desired time and save only that information.
 
 ## Usage
 
-![Example gif](https://raw.githubusercontent.com/jtstockard/Code_Quiz/main/Assets/Images/PreviewQuiz.gif)
+![Example](Images/example.gif)
 
 ## Credits
 

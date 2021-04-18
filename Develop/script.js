@@ -4,9 +4,7 @@
 1. Display current date in header
     * Get current date
     * Format current date
-
     * Update DOM with current date
-
 1. Render timeblocks
     *Read from localstorage
     *Create input field
